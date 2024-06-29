@@ -1,0 +1,151 @@
+@import url('global.css');
+
+.search-container {
+    margin-top: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.text-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d4d4d8;
+}
+
+.text-container:nth-child(4) {
+    border: 0;
+}
+
+.text-container i {
+    font-size: 1.8rem;
+    width: 40px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container > label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.input-container input {
+    font-size: 0.9rem;
+    font-weight: 400;
+    outline: none;
+    border: 0;
+}
+
+.sugestions-container {
+    padding: 0 20px;
+    position: absolute;
+    background-color: white;
+    height: 200px;
+    transform: translateY(50px);
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.sugestions-container > h2 {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.sugestions-container.disabled {
+    display: none;
+}
+
+.sugestions-info li {
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-container {
+    padding: 4% 0;
+    width: 100%;
+}
+
+.btn-container > button {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.btn-container > button > i {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.color-blue {
+    color: var(--primary-color);
+}
+
+.benefits-container {
+    margin-top: 10px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.benefit-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-context {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.benefit-text-container > h2 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.benefit-text-container p {
+    color: #71717a;
+    font-size: 0.9em;
+}
+
+.loading-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-container > i {
+    color: var(--primary-color);
+    font-size: 2rem;
+    animation: loading 1s infinite linear;
+}
+
+.loading-container.disabled {
+    display: none;
+}

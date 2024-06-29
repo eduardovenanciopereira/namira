@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/search.css">
+    <title>Namira - Resultados da pesquisa</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav class="navigation">
+                <a href="/">
+                    <img src="/assets/logo.svg" alt="Logo Namira">
+                </a>
+                <i class="ph ph-list" id="open-menu"></i>
+                <ul id="list-redirect">
+                    <i class="ph ph-x" id="close-menu"></i>
+                    <li><a href="/sobre">Sobre</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/entrar">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <h1 class="title">Resultados da pesquisa</h1>
+            <p class="sub-title">Exibindo resultados da pesquisa</p>
+            <div class="cards-container" id="cards-container"></div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/search.js"></script>
+</body>
+</html>

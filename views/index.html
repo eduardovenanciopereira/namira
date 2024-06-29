@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Namira - Leilões de imóveis</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav class="navigation">
+                <a href="/">
+                    <img src="/assets/logo.svg" alt="Logo Namira">
+                </a>
+                <i class="ph ph-list" id="open-menu"></i>
+                <ul id="list-redirect">
+                    <i class="ph ph-x" id="close-menu"></i>
+                    <li><a href="/sobre">Sobre</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/entrar">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <h1 class="title">Explore possibilidades exclusivas com cada proposta</h1>
+            <p class="sub-title">Explore, licite, conquiste.</p>
+            <div class="search-container">
+                <div class="text-container">
+                    <i class="ph ph-globe-hemisphere-east"></i>
+                    <div class="input-container">
+                        <label for="location" class="name-input">Localidade</label>
+                        <input type="text" id="location" placeholder="SP" data="">
+                        <div class="sugestions-container disabled" id="container-location">
+                            <h2>Estados</h2>
+                            <ul class="sugestions-info" id="sugestions-state"></ul>
+                            <h2>Cidades</h2>
+                            <ul class="sugestions-info" id="sugestions-city"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <i class="ph ph-house-line"></i>
+                    <div class="input-container">
+                        <label for="type" class="name-input">Tipo imóvel</label>
+                        <input type="text" id="type" placeholder="Casa" data="">
+                        <div class="sugestions-container disabled" id="container-type">
+                            <ul class="sugestions-info" id="sugestions-type"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <i class="ph ph-currency-circle-dollar"></i>
+                    <div class="input-container">
+                        <label for="modality" class="name-input">Modalidade</label>
+                        <input type="text" id="modality" placeholder="Venda Online" data="">
+                        <div class="sugestions-container disabled" id="container-modality">
+                            <ul class="sugestions-info" id="sugestions-modality"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <i class="ph ph-piggy-bank"></i>
+                    <div class="input-container">
+                        <label for="price" class="name-input">Preço máximo</label>
+                        <input type="text" inputmode="numeric" id="price" placeholder="90000">
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button type="button" id="btn-search">Pesquisar <i class="ph ph-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <h1 class="title">Benefícios de ser <span class="color-blue">Namira</span></h1>
+            <p class="sub-title">Benefícios que fazem parte de sua navegação.</p>
+            <div class="benefits-container">
+                <div class="benefit-container">
+                    <img src="/assets/search_context.svg" alt="" class="icon-context">
+                    <div class="benefit-text-container">
+                        <h2>Busca rápida</h2>
+                        <p>Busque opções entre mais de 19 mil imóveis em poucos segundos.</p>
+                    </div>
+                </div>
+                <div class="benefit-container">
+                    <img src="/assets/reminder_context.svg" alt="" class="icon-context">
+                    <div class="benefit-text-container">
+                        <h2>Comparação de preços</h2>
+                        <p>Compare preços de imóveis em todo catálogo disponível.</p>
+                    </div>
+                </div>
+                <div class="benefit-container">
+                    <img src="/assets/catalog_context.svg" alt="" class="icon-context">
+                    <div class="benefit-text-container">
+                        <h2>Otímas ofertas</h2>
+                        <p>Encontre várias ofertas em nosso amplo catálogo de imóveis</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="title">Destaques de imóveis</h1>
+            <p class="sub-title">Veja alguns destaques de imóveis por desconto.</p>
+            <div class="loading-container" id="loading-container">
+                <i class="ph ph-circle-notch"></i>
+            </div>
+            <div class="cards-container" id="cards-container"></div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
